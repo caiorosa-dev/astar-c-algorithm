@@ -103,13 +103,19 @@ void showPath(Node parents[][COLS], Node end, Node start, bool animate) {
 }
 
 void showGrid(Node start, Node end) {
+    int counter = 0;
     for (int i = 0; i < (COLS + 2); ++i) {
+        if (i > 0 && counter < COLS) {
+            printf("_%d_", counter);
+            counter++;
+            continue;
+        }
         printf("___");
     }
     printf("\n");
 
     for (int rowI = 0; rowI < ROWS; ++rowI) {
-        printf("[  ");
+        printf("%d  ", rowI);
         for (int colI = 0; colI < COLS; ++colI) {
             char display = ' ';
 
