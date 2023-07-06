@@ -21,6 +21,6 @@ int main( )
     printf("Construindo caminho...\n\n");
     runAStarAlgorithm(start, end);
 
-    printf("\nCaminho finalizado.\n\nTrabalho feito por: \nCaio Furtado Rosa\n");
+    printf("\nCaminho finalizado.\n\nTrabalho feito por: \nCaio Furtado Rosa (https://caiorosadev.com)\nProjeto: https://github.com/caiorosa-dev/astar-c-algorithm");
     return 0;
 }
